@@ -30,6 +30,10 @@ describe("get prime", function() {
   it("should return positive numbers needed for'a'", function() {
     expect(getprime('a')).toBe("positive numbers needed");
   });
+  it("should return positive numbers needed for'hi'", function() {
+    expect(getprime('hi')).toBe("positive numbers needed");
+  });
+
 
 
 })
