@@ -9,7 +9,7 @@ describe("get prime", function() {
   });
   it("should return [] for number without prime", function() {
     expect(getprime(-1)).toBe("positive numbers needed");
-  it("should return [] for number without prime", function() {
+  it("should return [2] for 2", function() {
     expect(getprime(2)).toBe([2]);
   });
   it("should return [2,3,5,7] for 9", function() {
@@ -27,8 +27,8 @@ describe("get prime", function() {
   it("should return [2] for 3", function() {
     expect(getprime(3)).toBe([2]);
   });
-  it("should return [] for number without prime", function() {
-    expect(getprime(-4)).toBe("positive numbers needed");
+  it("should return positive numbers needed for'a'", function() {
+    expect(getprime('a')).toBe("positive numbers needed");
   });
 
 
