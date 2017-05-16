@@ -1,24 +1,27 @@
 function getprime(number){
-  /*
-  number should be a positive integer
-  */
-  if(number>0){
-    let prime =[];
-    //generating factors between 2 and number-1
-    for (let i=2;i<=number;i++){
-      for (let j=2;j<=i;j++){
-        //checking for primes
-        if (i%j===0){
-          break;
-        }
+    /*
+     This function accept a positive interger
+     parameter and returns an array of prime
+     numbers between 0 and that number.
+    */
+      if (number>0){
+      let prime=[];
+      //generating numbers inbetween 2 and number
+        for (let i=2; i<=number;i++){
+          //testing for primes
+          for (let j=2; j<=i;j++){
 
-      }
-      if (i==j){
-        prime.push(i);
+            if (i%j===0){
+              break;
+            }
+          }
+          if (i==j){
+            prime.push(i);
+          }
+
+        }
+        return prime;
+      }else{
+        return 'positive numbers needed'
       }
     }
-    return prime;
-}
-}else{
-  return "positive numbers needed"
-}
