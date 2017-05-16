@@ -5,7 +5,7 @@ function getprime(number){
      numbers between 0 and that number.
     */
       if (number>0){
-      let prime=[];
+      let primeNumbers=[];
       //generating numbers inbetween 2 and number
         for (let i=2; i<=number;i++){
           //testing for primes
@@ -16,11 +16,11 @@ function getprime(number){
             }
           }
           if (i==j){
-            prime.push(i);
+            primeNumbers.push(i);
           }
 
         }
-        return prime;
+        return primeNumbers;
       }else{
         return 'positive numbers needed'
       }
